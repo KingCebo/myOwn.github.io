@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SURVEY FORM PROJEECT</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Smart-Tutors Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the tutoring service</p>
+    </header>
+    
+      
+      <form id="survey-form" action="#">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+       
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue"></span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select current role</option>
+            <option value="student">Full Time Learner</optiFull>
+            <option value="job">Part Time Learner</option>
+            <option value="learner">Tutor</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Smart-Tutors to a friend?</p>
+          <label>
+            <input name="feedback" value="definitely" type="radio" class="edit" checked="">Definitely</label>
+          <label>
+            <input name="feedback" value="maybe" type="radio" class="edit">Maybe</label>
+
+          <label><input name="feedback" value="not-sure" type="radio" class="edit">Not sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite course of Smart-Tutors?</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="mathematics">Mathemtics</option>
+            <option value="projects">Physical Sciences</option>
+            <option value="chemistry">Chemistry</option>
+            <option value="programming">Programming</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="prefer" value="tutors' engagement" type="checkbox" class="edit">Tutors' engagement</label>
+          
+          <label><input name="prefer" value="online schedule" type="checkbox" class="edit">Online schedule</label>
+          
+          <label><input name="prefer" value="tests assessment" type="checkbox" class="edit">Tests assessment</label>
+          
+          <label><input name="prefer" value="challenges" type="checkbox" class="edit">Challenges</label>
+          
+          <label><input name="prefer" value="resource provision" type="checkbox" class="edit">Resource allocation</label>
+          
+          <label><input name="prefer" value="videos" type="checkbox" class="edit">Videos</label>
+          
+          <label><input name="prefer" value="city-meetups" type="checkbox" class="edit">Meetups</label>
+           
+          <label><input name="prefer" value="forum" type="checkbox" class="edit">Forum</label>
+          
+          <label><input name="prefer" value="additional-courses" type="checkbox" class="edit">Additional Courses</label>
+        </div>
+
+        <div >
+          <p class="">Any comments or suggestions?</p>
+          <textarea id="comments" class="form-control" name="comment" placeholder="Enter your comment here..." rows="6"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
